@@ -1,0 +1,65 @@
+# Dagelijkse tv-gids (XMLTV) voor de gratis zenders in Kijkluister.
+# Haalt met iptv-org/epg de gids op bij tvgids.nl, webtv.delta.nl, vrt.be, vtm.be,
+# mon-programme-tv.be en pickx.be, alleen voor de zenders uit de iptv-org-lijsten voor
+# Nederland en België, en zet guide.xml.gz in deze repo.
+# Kijkluister haalt hem op via:
+#   https://raw.githubusercontent.com/firefly2008/kijkluister-epg/main/guide.xml.gz
+name: Tv-gids
+
+on:
+  schedule:
+    - cron: '17 3 * * *'      # elke nacht (UTC)
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - .github/workflows/tv-gids.yml
+      - scripts/epg-channels.py
+
+permissions:
+  contents: write
+
+concurrency:
+  group: tv-gids
+  cancel-in-progress: false
+
+jobs:
+  guide:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: iptv-org/epg ophalen
+        run: |
+          git clone --depth 1 https://github.com/iptv-org/epg.git /tmp/epg
+          cd /tmp/epg && npm install --no-audit --no-fund
+
+      - name: Zenders koppelen
+        run: |
+          curl -fsSL https://iptv-org.github.io/iptv/countries/nl.m3u -o /tmp/nl.m3u
+          curl -fsSL https://iptv-org.github.io/iptv/countries/be.m3u -o /tmp/be.m3u
+          python3 scripts/epg-channels.py /tmp/epg channels.xml /tmp/nl.m3u /tmp/be.m3u
+          cp channels.xml /tmp/epg/kijkluister.channels.xml
+
+      - name: Gids ophalen (3 dagen)
+        working-directory: /tmp/epg
+        run: |
+          npm run grab --- --channels=kijkluister.channels.xml --output=/tmp/guide.xml --days=3 --maxConnections=5 --timeout=30000
+          echo "Zenders in gids: $(grep -c '<channel ' /tmp/guide.xml)"
+          echo "Programma's:    $(grep -c '<programme ' /tmp/guide.xml)"
+          test "$(grep -c '<programme ' /tmp/guide.xml)" -gt 100
+
+      - name: Opslaan in de repo
+        run: |
+          gzip -9 -c /tmp/guide.xml > guide.xml.gz
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add guide.xml.gz channels.xml
+          # Geen geschiedenis opbouwen: één commit met de gids van vandaag
+          git commit -q -m "Tv-gids $(date -u +%Y-%m-%d)" || { echo "Niets veranderd"; exit 0; }
+          git push -q origin HEAD:main
