@@ -15,6 +15,7 @@
   <channel site="pickx.be" site_id="UID50130" lang="nl" xmltv_id="Bruzz.be@SD">BRUZZ</channel>
   <channel site="pickx.be" site_id="UID50035" lang="fr" xmltv_id="CanalZ.be@SD">Canal Z</channel>
   <channel site="pickx.be" site_id="UID50146" lang="fr" xmltv_id="CanalZoom.be@SD">Canal Zoom</channel>
+  <channel site="pickx.be" site_id="UID2068" lang="fr" xmltv_id="ComedyCentral.fr@SD">Comedy Central F</channel>
   <channel site="webtv.delta.nl" site_id="10001" lang="nl" xmltv_id="DTVOssBernheze.nl@SD">DTV Oss Bernheze</channel>
   <channel site="webtv.delta.nl" site_id="3067" lang="nl" xmltv_id="DenHaagTV.nl@SD">Den Haag TV</channel>
   <channel site="tvgids.nl" site_id="discovery" lang="nl" xmltv_id="DiscoveryChannel.nl@SD">Discovery</channel>
