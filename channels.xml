@@ -19,16 +19,13 @@
   <channel site="webtv.delta.nl" site_id="10001" lang="nl" xmltv_id="DTVOssBernheze.nl@SD">DTV Oss Bernheze</channel>
   <channel site="webtv.delta.nl" site_id="3067" lang="nl" xmltv_id="DenHaagTV.nl@SD">Den Haag TV</channel>
   <channel site="tvgids.nl" site_id="discovery" lang="nl" xmltv_id="DiscoveryChannel.nl@SD">Discovery</channel>
+  <channel site="mon-programme-tv.be" site_id="64/programme-television-disney-channel" lang="fr" xmltv_id="DisneyChannel.fr@SD">DISNEY CHANNEL</channel>
   <channel site="tvgids.nl" site_id="disneychannel" lang="nl" xmltv_id="DisneyChannel.nl@SD">Disney Channel</channel>
   <channel site="tvgids.nl" site_id="espn" lang="nl" xmltv_id="ESPN.nl@HD">ESPN 1</channel>
   <channel site="tvgids.nl" site_id="espn2" lang="nl" xmltv_id="ESPN2.nl@HD">ESPN 2</channel>
   <channel site="tvgids.nl" site_id="espn3" lang="nl" xmltv_id="ESPN3.nl@HD">ESPN 3</channel>
   <channel site="tvgids.nl" site_id="espn4" lang="nl" xmltv_id="ESPN4.nl@HD">ESPN 4</channel>
   <channel site="webtv.delta.nl" site_id="3170" lang="nl" xmltv_id="FeelGoodTV.nl@SD">Feel Good TV</channel>
-  <channel site="tvgids.nl" site_id="film1action" lang="nl" xmltv_id="Film1Action.nl@SD">Film1 Action</channel>
-  <channel site="tvgids.nl" site_id="film1drama" lang="nl" xmltv_id="Film1Drama.nl@SD">Film1 Drama</channel>
-  <channel site="tvgids.nl" site_id="film1family" lang="nl" xmltv_id="Film1Family.nl@SD">Film1 Family</channel>
-  <channel site="tvgids.nl" site_id="film1premiere" lang="nl" xmltv_id="Film1Premiere.nl@SD">Film 1 Premiere</channel>
   <channel site="webtv.delta.nl" site_id="10081" lang="nl" xmltv_id="HTRTV.nl@SD">HTR TV</channel>
   <channel site="webtv.delta.nl" site_id="3006" lang="nl" xmltv_id="History.nl@SD">HISTORY</channel>
   <channel site="webtv.delta.nl" site_id="31" lang="nl" xmltv_id="HorseCountryTV.uk@SD">Horse &amp; Country TV</channel>
