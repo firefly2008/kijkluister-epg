@@ -45,6 +45,7 @@
   <channel site="webtv.delta.nl" site_id="3178" lang="nl" xmltv_id="ML5TV.nl@SD">ML5 TV</channel>
   <channel site="vrt.be" site_id="mnm" lang="nl" xmltv_id="MNM.be@SD">MNM</channel>
   <channel site="mon-programme-tv.be" site_id="96/programme-television-mtv" lang="fr" xmltv_id="MTV.fr@SD">MTV</channel>
+  <channel site="webtv.delta.nl" site_id="35" lang="nl" xmltv_id="MTV.nl@SD">MTV</channel>
   <channel site="pickx.be" site_id="UID0121" lang="fr" xmltv_id="Matele.be@SD">MaTélé</channel>
   <channel site="webtv.delta.nl" site_id="3095" lang="nl" xmltv_id="NH.nl@SD">NH</channel>
   <channel site="webtv.delta.nl" site_id="3062" lang="nl" xmltv_id="NOOSTV.nl@SD">NOOS TV</channel>
@@ -54,6 +55,7 @@
   <channel site="tvgids.nl" site_id="npo3" lang="nl" xmltv_id="NPO3.nl@HD">NPO 3</channel>
   <channel site="pickx.be" site_id="UID2061" lang="nl" xmltv_id="NationalGeographic.nl@HD">NGC HD N</channel>
   <channel site="tvgids.nl" site_id="ngc" lang="nl" xmltv_id="NationalGeographic.nl@SD">National Geographic</channel>
+  <channel site="pickx.be" site_id="UID0135" lang="nl" xmltv_id="Nickelodeon.nl@HD">nick N HD</channel>
   <channel site="tvgids.nl" site_id="nickelodeon" lang="nl" xmltv_id="Nickelodeon.nl@SD">Nickelodeon</channel>
   <channel site="pickx.be" site_id="UID50136" lang="fr" xmltv_id="Notele.be@SD">No Télé</channel>
   <channel site="webtv.delta.nl" site_id="10027" lang="nl" xmltv_id="OOGTV.nl@SD">OOG TV</channel>
