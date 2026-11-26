@@ -20,7 +20,6 @@
   <channel site="webtv.delta.nl" site_id="3067" lang="nl" xmltv_id="DenHaagTV.nl@SD">Den Haag TV</channel>
   <channel site="tvgids.nl" site_id="discovery" lang="nl" xmltv_id="DiscoveryChannel.nl@SD">Discovery</channel>
   <channel site="mon-programme-tv.be" site_id="64/programme-television-disney-channel" lang="fr" xmltv_id="DisneyChannel.fr@SD">DISNEY CHANNEL</channel>
-  <channel site="tvgids.nl" site_id="disneychannel" lang="nl" xmltv_id="DisneyChannel.nl@SD">Disney Channel</channel>
   <channel site="tvgids.nl" site_id="espn" lang="nl" xmltv_id="ESPN.nl@HD">ESPN 1</channel>
   <channel site="tvgids.nl" site_id="espn2" lang="nl" xmltv_id="ESPN2.nl@HD">ESPN 2</channel>
   <channel site="tvgids.nl" site_id="espn3" lang="nl" xmltv_id="ESPN3.nl@HD">ESPN 3</channel>
@@ -110,5 +109,4 @@
   <channel site="pickx.be" site_id="UID0118" lang="fr" xmltv_id="Vedia.be@SD">Vedia</channel>
   <channel site="webtv.delta.nl" site_id="3066" lang="nl" xmltv_id="WOS.nl@SD">WOS</channel>
   <channel site="pickx.be" site_id="UID50114" lang="nl" xmltv_id="WTV.be@SD">WTV</channel>
-  <channel site="tvgids.nl" site_id="xite" lang="nl" xmltv_id="XITE.nl@SD">XITE</channel>
 </channels>
